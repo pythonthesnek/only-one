@@ -418,6 +418,7 @@ animations = [{
 size = Vector3(2.10492, 2.14154, 0.313843)
 
 [node name="Demon" type="CharacterBody3D"]
+wall_min_slide_angle = 0.0
 script = ExtResource("1_q0mqk")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
