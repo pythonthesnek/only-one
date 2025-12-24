@@ -5,7 +5,7 @@ var player = null
 @export var SPEED = 4.0
 const ATTACK_RANGE = 2.5
 
-@export var player_path: NodePath
+@export var player_path:= "/root/World/Map/NavigationRegion3D/Player"
 
 @onready var head: Node3D = $"../Player/Head"
 @onready var animated_sprite: AnimatedSprite3D = $AnimatedSprite3D
@@ -23,7 +23,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	velocity = Vector3.ZERO
+	velocity = Vector3.ZERO	
 	
 	nav_agent.set_target_position(player.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position()

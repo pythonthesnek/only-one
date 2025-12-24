@@ -3851,6 +3851,12 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6, 0, -16)
 [node name="pine27" parent="Map/NavigationRegion3D/Decorations" instance=ExtResource("24_rmsh7")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9, 0, -12)
 
+[node name="Player" parent="Map/NavigationRegion3D" instance=ExtResource("30_6etvu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13.8662)
+
+[node name="MeshInstance3D" parent="Map/NavigationRegion3D/Player" index="0"]
+visible = false
+
 [node name="Spawns" type="Node3D" parent="Map"]
 
 [node name="grave_right" type="Node3D" parent="Map/Spawns"]
@@ -3995,22 +4001,20 @@ radius = 80.0
 radial_segments = 100
 rings = 12
 
-[node name="Player" parent="." instance=ExtResource("30_6etvu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13.8662)
-
-[node name="MeshInstance3D" parent="Player" index="0"]
-visible = false
-
 [node name="Demon" parent="." instance=ExtResource("31_7gh22")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.93308, 1.20397, 10.9394)
-player_path = NodePath("../Player")
 
 [node name="AnimatedSprite3D" parent="Demon" index="0"]
 animation = &"animation3"
 frame_progress = 0.0
 
-[connection signal="player_hit" from="Player" to="." method="_on_player_player_hit"]
-[connection signal="player_hit" from="Player" to="Player" method="_on_player_hit"]
+[node name="DemonSpawnTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
 
-[editable path="Player"]
+[connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="." method="_on_player_player_hit"]
+[connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="Map/NavigationRegion3D/Player" method="_on_player_hit"]
+[connection signal="timeout" from="DemonSpawnTimer" to="." method="_on_demon_spawn_timer_timeout"]
+
+[editable path="Map/NavigationRegion3D/Player"]
 [editable path="Demon"]
