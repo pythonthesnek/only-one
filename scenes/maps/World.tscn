@@ -1355,9 +1355,11 @@ collision_layer = 0
 
 [node name="ironFenceDamaged13" parent="Map/NavigationRegion3D/GravesLeft" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 36.8794, -0.9, -18.2282)
+collision_layer = 0
 
 [node name="ironFenceDamaged7" parent="Map/NavigationRegion3D/GravesLeft" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(0.5, 0.866025, -3.78552e-08, 0, -4.37114e-08, -1, -0.866025, 0.5, -2.18557e-08, 39.0098, 0.9, 1.42548)
+collision_layer = 0
 
 [node name="ironFenceDamaged8" parent="Map/NavigationRegion3D/GravesLeft" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 40.0098, 0.9, -0.574523)
