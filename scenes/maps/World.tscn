@@ -1141,18 +1141,23 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.009
 
 [node name="ironFenceDamaged12" parent="Map/NavigationRegion3D/GravesRight" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 38.2098, 0.9, -17.2745)
+collision_layer = 0
 
 [node name="ironFenceDamaged13" parent="Map/NavigationRegion3D/GravesRight" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 36.8794, -0.9, -18.2282)
+collision_layer = 0
 
 [node name="ironFenceDamaged7" parent="Map/NavigationRegion3D/GravesRight" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(0.5, 0.866025, -3.78552e-08, 0, -4.37114e-08, -1, -0.866025, 0.5, -2.18557e-08, 39.0098, 0.9, 1.42548)
+collision_layer = 0
 
 [node name="ironFenceDamaged8" parent="Map/NavigationRegion3D/GravesRight" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 40.0098, 0.9, -0.574523)
+collision_layer = 0
 
 [node name="ironFenceDamaged9" parent="Map/NavigationRegion3D/GravesRight" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(-0.766044, 0.642788, -2.80971e-08, 0, -4.37114e-08, -1, -0.642788, -0.766044, 3.34849e-08, 40.5098, 0.9, -2.57452)
+collision_layer = 0
 
 [node name="ironFenceDamaged5" parent="Map/NavigationRegion3D/GravesRight" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.9, 0, 3.6)
@@ -1165,9 +1170,11 @@ transform = Transform3D(1, 0, 0, 0, 0.258819, -0.965926, 0, 0.965926, 0.258819, 
 
 [node name="ironFenceDamaged16" parent="Map/NavigationRegion3D/GravesRight" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(1, 0, 0, 0, -2.98023e-08, -1, 0, 1, -2.98023e-08, 26.8707, 0.9, -18.2532)
+collision_layer = 0
 
 [node name="ironFenceDamaged2" parent="Map/NavigationRegion3D/GravesRight" instance=ExtResource("11_6f3ry")]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 19.8, 0.9, 3.5)
+collision_layer = 0
 
 [node name="GravesLeft" type="Node3D" parent="Map/NavigationRegion3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 0, -13.7)
@@ -3845,6 +3852,140 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6, 0, -16)
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9, 0, -12)
 
 [node name="Spawns" type="Node3D" parent="Map"]
+
+[node name="grave_right" type="Node3D" parent="Map/Spawns"]
+
+[node name="Node3D" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8526, 0.309032, -1.03325)
+
+[node name="Node3D2" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, 3.14774)
+
+[node name="Node3D3" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, -4.60017)
+
+[node name="Node3D4" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, -9.22049)
+
+[node name="Node3D5" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, -12.7246)
+
+[node name="Node3D6" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, -17.0857)
+
+[node name="Node3D7" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -17.0857)
+
+[node name="Node3D8" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -12.941)
+
+[node name="Node3D9" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -8.59991)
+
+[node name="Node3D10" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -5.24777)
+
+[node name="Node3D11" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -0.685219)
+
+[node name="Node3D12" type="Node3D" parent="Map/Spawns/grave_right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, 3.55777)
+
+[node name="grave_back" type="Node3D" parent="Map/Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.05871)
+
+[node name="Node3D" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.9783, 0, 18.3162)
+
+[node name="Node3D2" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.038, 0, 18.3162)
+
+[node name="Node3D3" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.95904, 0, 18.3162)
+
+[node name="Node3D4" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.92345, 0, 18.3162)
+
+[node name="Node3D5" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016917, 0, 18.3162)
+
+[node name="Node3D6" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.95392, 0, 18.3162)
+
+[node name="Node3D7" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0141, 0, 18.3162)
+
+[node name="Node3D8" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9779, 0, 18.3162)
+
+[node name="Node3D9" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0119, 0, 18.3162)
+
+[node name="Node3D10" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0119, 0, 24.1541)
+
+[node name="Node3D11" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9435, 0, 24.1541)
+
+[node name="Node3D12" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0554, 0, 24.1541)
+
+[node name="Node3D13" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.95247, 0, 24.1541)
+
+[node name="Node3D14" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0581243, 0, 24.1541)
+
+[node name="Node3D15" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.78534, 0, 24.1541)
+
+[node name="Node3D16" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.74172, 0, 24.1541)
+
+[node name="Node3D17" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9177, 0, 24.1541)
+
+[node name="Node3D18" type="Node3D" parent="Map/Spawns/grave_back"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6276, 0, 24.1541)
+
+[node name="grave_left" type="Node3D" parent="Map/Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.492, 0, 0)
+
+[node name="Node3D" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8526, 0.309032, -1.03325)
+
+[node name="Node3D2" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, 3.14774)
+
+[node name="Node3D3" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, -4.60017)
+
+[node name="Node3D4" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, -9.22049)
+
+[node name="Node3D5" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, -12.7246)
+
+[node name="Node3D6" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6556, 0.431959, -17.0857)
+
+[node name="Node3D7" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -17.0857)
+
+[node name="Node3D8" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -12.941)
+
+[node name="Node3D9" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -8.59991)
+
+[node name="Node3D10" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -5.24777)
+
+[node name="Node3D11" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, -0.685219)
+
+[node name="Node3D12" type="Node3D" parent="Map/Spawns/grave_left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7123, 0.431959, 3.55777)
 
 [node name="Moon" type="CSGSphere3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 937, 717, -683)
