@@ -424,8 +424,7 @@ script = ExtResource("1_q0mqk")
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 sprite_frames = SubResource("SpriteFrames_yfv42")
 animation = &"animation4"
-frame = 8
-frame_progress = 0.0269708
+frame_progress = 0.890737
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0887146, 0.12149, 0.00811768)
