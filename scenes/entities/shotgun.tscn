@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbunktpy0kg6s"]
+
+[ext_resource type="PackedScene" uid="uid://jdyqjy3u6d4e" path="res://assets/shotgun/Shotgun Double Barrel.glb" id="1_cefva"]
+
+[node name="Root Scene" instance=ExtResource("1_cefva")]
+
+[node name="Shotgun_doubleBarrel" parent="RootNode" index="0"]
+cast_shadow = 0
