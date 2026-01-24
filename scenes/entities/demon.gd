@@ -3,6 +3,7 @@ extends CharacterBody3D
 var player = null
 
 @export var SPEED = 4.0
+@export var HEALTH = 2
 const ATTACK_RANGE = 2.5
 
 @export var player_path:= "/root/World/Map/NavigationRegion3D/Player"
@@ -23,7 +24,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	velocity = Vector3.ZERO	
+	velocity = Vector3.ZERO
 	
 	nav_agent.set_target_position(player.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position()
@@ -42,3 +43,8 @@ func _process(delta: float) -> void:
 	
 	if animated_sprite.get_frame() == 4:
 		player.hit()
+
+func deal_damage(dmg):
+	HEALTH -= dmg
+	if HEALTH <= 0:
+		queue_free()

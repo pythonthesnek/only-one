@@ -20,11 +20,15 @@ const FOV_CHANGE = 1.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = 9.8
 
+# Weapon vars
+@export var shotgun_damage = 5
+
 # Signals
 signal player_hit
 var dead: bool = false
 
 @onready var gun_anim = $Head/Camera3D/shotgun/AnimationPlayer
+@onready var shotgun_ray: Node3D = $Head/Camera3D/shotgun/RayCast3D
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 
@@ -80,7 +84,8 @@ func _physics_process(delta):
 	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
 	
 	# Shooting
-	if Input.is_action_just_pressed("shoot"): #and !gun_anim.is_playing():
+	if Input.is_action_just_pressed("shoot") and !gun_anim.is_playing():
+		shoot()
 		gun_anim.play("shoot")
 	
 	move_and_slide()
@@ -101,3 +106,28 @@ func hit():
 #func _on_player_hit() -> void:
 	#head.global_position.y = -10
 	#camera.rotation.z = deg_to_rad(15)
+
+
+# Random spread in degrees
+var spread = 3
+# Number of projectiles per shot
+var number_of_pellets = 8
+
+func shoot():
+	# Run this code for each pellet
+	for i in range(number_of_pellets):
+		# Calculate random pitch and yaw, roll is always 0
+		var pitch = randf_range(-spread, spread)
+		var yaw = randf_range(-spread, spread)
+		var random_spread = Vector3(pitch, yaw, 0)
+		# Rotate the raycast node
+		shotgun_ray.set_rotation_degrees(random_spread)
+		# Save the impact position
+		if (
+			shotgun_ray.is_colliding() and shotgun_ray.get_collider().has_method("deal_damage")
+		):
+			shotgun_ray.get_collider().deal_damage(shotgun_damage)
+		
+		
+		# The important part: update the raycast immediately
+		shotgun_ray.force_raycast_update()
