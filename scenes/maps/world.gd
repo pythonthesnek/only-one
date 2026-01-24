@@ -1,7 +1,7 @@
 extends Node3D
 
 
-@onready var hit_rect: ColorRect = $UI/HitRect
+@onready var hit_rect: TextureRect = $UI/HitRect
 @onready var spawns: Node3D = $Map/Spawns
 @onready var navigation_region_3d: NavigationRegion3D = $Map/NavigationRegion3D
 
@@ -14,7 +14,9 @@ func _ready() -> void:
 
 
 func _on_player_player_hit() -> void:
-	print("You got hit!")
+	hit_rect.visible = true
+	await get_tree().create_timer(0.2).timeout
+	hit_rect.visible = false
 
 
 func _get_random_child(parent_node):

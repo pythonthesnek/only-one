@@ -93,6 +93,6 @@ func hit():
 	emit_signal("player_hit")
 
 
-func _on_player_hit() -> void:
-	head.global_position.y = -10
-	camera.rotation.z = deg_to_rad(15)
+#func _on_player_hit() -> void:
+	#head.global_position.y = -10
+	#camera.rotation.z = deg_to_rad(15)
