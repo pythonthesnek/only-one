@@ -24,6 +24,7 @@ var gravity = 9.8
 signal player_hit
 var dead: bool = false
 
+@onready var gun_anim = $Head/Camera3D/shotgun/AnimationPlayer
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 
@@ -77,6 +78,10 @@ func _physics_process(delta):
 	var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
 	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
+	
+	# Shooting
+	if Input.is_action_just_pressed("shoot"): #and !gun_anim.is_playing():
+		gun_anim.play("shoot")
 	
 	move_and_slide()
 	
