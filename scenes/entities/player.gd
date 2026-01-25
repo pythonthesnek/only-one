@@ -124,7 +124,8 @@ func shoot():
 		shotgun_ray.set_rotation_degrees(random_spread)
 		# Save the impact position
 		if (
-			shotgun_ray.is_colliding() and shotgun_ray.get_collider().has_method("deal_damage")
+			shotgun_ray.is_colliding() and
+			shotgun_ray.get_collider().has_method("deal_damage")
 		):
 			shotgun_ray.get_collider().deal_damage(shotgun_damage)
 		
