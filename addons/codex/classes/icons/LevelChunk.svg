@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="15.99874"
+   height="15.999999"
+   viewBox="0 0 4.2329999 4.233333"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="LevelChunk.svg"
+   inkscape:export-filename="..\Project Files\fps-level-tools2\addons\codex\classes\icons\LevelChunk.svg"
+   inkscape:export-xdpi="112.25002"
+   inkscape:export-ydpi="112.25002"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="23.860606"
+     inkscape:cx="-2.7032004"
+     inkscape:cy="8.3820167"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient2919"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop2917" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#b775ff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1"
+       id="rect238"
+       width="3.3559058"
+       height="3.3559058"
+       x="0.43871379"
+       y="0.43871379" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#b775ff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1"
+       id="rect238-1"
+       width="2.2424977"
+       height="2.2424977"
+       x="0.99541783"
+       y="0.99541783" />
+  </g>
+</svg>

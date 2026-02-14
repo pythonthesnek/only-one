@@ -1,0 +1,5 @@
+--Codex Level Builder--
+Created by Ugly Duckling Games
+
+Feel free to modify and redistribute Codex as you please.
+Just keep this file.

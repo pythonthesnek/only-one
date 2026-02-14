@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="13.683738"
+   height="13.683739"
+   viewBox="0 0 3.6204888 3.6204891"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="LevelTile.svg"
+   inkscape:export-filename="..\Project Files\fps-level-tools\addons\level_builder\classes\icons\LevelTile.svg"
+   inkscape:export-xdpi="112.25002"
+   inkscape:export-ydpi="112.25002"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="33.743993"
+     inkscape:cx="4.0747994"
+     inkscape:cy="7.6458054"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient2919"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop2917" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.30642212,-0.30642215)">
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#ffffff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1"
+       id="rect238"
+       width="3.3559058"
+       height="3.3559058"
+       x="0.43871379"
+       y="0.43871379" />
+    <ellipse
+       style="fill:none;fill-opacity:0;stroke:#ffffff;stroke-width:0.264583;stroke-dasharray:none;stroke-opacity:1"
+       id="path3000"
+       cx="2.1166666"
+       cy="2.1166666"
+       rx="0.9879536"
+       ry="0.98011267" />
+  </g>
+</svg>
