@@ -31,7 +31,7 @@ var dead: bool = false
 @onready var shotgun_ray: Node3D = $Head/Camera3D/shotgun/RayCast3D
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
-
+@onready var decal: Decal = $Head/Camera3D/shotgun/Decal
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -124,10 +124,20 @@ func shoot():
 		shotgun_ray.set_rotation_degrees(random_spread)
 		# Save the impact position
 		if (
-			shotgun_ray.is_colliding() and
-			shotgun_ray.get_collider().has_method("deal_damage")
+			shotgun_ray.is_colliding()
 		):
-			shotgun_ray.get_collider().deal_damage(shotgun_damage)
+			# vars
+			var bullet_target_pos = shotgun_ray.global_transform * shotgun_ray.target_position
+			var obj = shotgun_ray.get_collider()
+			var nrml = shotgun_ray.get_collision_normal()
+			var pt = shotgun_ray.get_collision_point()
+			BulletDecalPool.spawn_bullet_decal(pt, nrml, obj, shotgun_ray.global_basis)
+			if (
+				obj.has_method("deal_damage")
+			):
+				obj.deal_damage(shotgun_damage)
+			#var shotgun_decal = decal.instantiate()
+			#shotgun_decal.global_position = shotgun_ray.get_collider().position()
 		
 		
 		# The important part: update the raycast immediately

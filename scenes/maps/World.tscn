@@ -4010,7 +4010,7 @@ animation = &"animation3"
 frame_progress = 0.0
 
 [node name="DemonSpawnTimer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 2.0
 autostart = true
 
 [node name="UI" type="Control" parent="."]
