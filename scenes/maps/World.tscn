@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://db2h3t17k37pe"]
+[gd_scene load_steps=44 format=4 uid="uid://db2h3t17k37pe"]
 
 [ext_resource type="Texture2D" uid="uid://difglsmbfmw81" path="res://Textures/terrain.jpg" id="1_6etvu"]
 [ext_resource type="Script" uid="uid://b80iayti7eeef" path="res://scenes/maps/world.gd" id="1_kt751"]
@@ -33,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://b5m0jbd8kjwbr" path="res://scenes/entities/player.tscn" id="30_6etvu"]
 [ext_resource type="PackedScene" uid="uid://crsvy1tc031xw" path="res://scenes/entities/demon.tscn" id="31_7gh22"]
 [ext_resource type="Texture2D" uid="uid://dyxjt0lj48kh2" path="res://assets/hit boarder/Vignette-PNG-File-1268532226.png" id="33_0hib4"]
+[ext_resource type="Texture2D" uid="uid://dkltndieu1c2h" path="res://Textures/crosshair.png" id="34_xr0al"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_t7442"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -4015,41 +4016,39 @@ autostart = true
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="HitRect" type="TextureRect" parent="UI"]
+visible = false
 modulate = Color(1, 1, 1, 0.568627)
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 26.797
-anchor_bottom = 18.175
-offset_right = 854.12
-offset_bottom = 361.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("33_0hib4")
 expand_mode = 1
 
-[node name="TextureRect" type="TextureRect" parent="UI"]
-layout_mode = 2
-offset_left = 974.0
-offset_top = 572.0
-offset_right = 974.0
-offset_bottom = 572.0
-
-[node name="CenterContainer" type="CenterContainer" parent="UI"]
+[node name="CrosshairRect" type="TextureRect" parent="UI"]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 954.0
-offset_top = 552.0
-offset_right = 954.0
-offset_bottom = 552.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 90.0
+offset_bottom = 90.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("34_xr0al")
 
 [connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="." method="_on_player_player_hit"]
 [connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="Map/NavigationRegion3D/Player" method="_on_player_hit"]
