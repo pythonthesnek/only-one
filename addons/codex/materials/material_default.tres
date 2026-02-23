@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" script_class="LevelMaterial" load_steps=5 format=3 uid="uid://bf4c0tjngqow8"]
+[gd_resource type="StandardMaterial3D" script_class="LevelMaterial" format=3 uid="uid://bf4c0tjngqow8"]
 
 [ext_resource type="Texture2D" uid="uid://cxokuyjpobuxj" path="res://addons/codex/textures/Default.png" id="1_bul7c"]
 [ext_resource type="Script" uid="uid://hrrjqakn2v84" path="res://addons/codex/classes/material_properties.gd" id="2_ysnry"]
@@ -6,7 +6,6 @@
 
 [sub_resource type="Resource" id="Resource_nequ2"]
 script = ExtResource("2_ysnry")
-material_id = 0
 
 [resource]
 diffuse_mode = 1

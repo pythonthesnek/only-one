@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" script_class="LevelMaterial" load_steps=5 format=3 uid="uid://f3oxa31mdhu7"]
+[gd_resource type="StandardMaterial3D" script_class="LevelMaterial" format=3 uid="uid://f3oxa31mdhu7"]
 
 [ext_resource type="Texture2D" uid="uid://usvpfjfmdiqq" path="res://addons/codex/textures/NoDraw1.png" id="1_21loa"]
 [ext_resource type="Script" uid="uid://hrrjqakn2v84" path="res://addons/codex/classes/material_properties.gd" id="2_tl3jl"]
@@ -6,7 +6,6 @@
 
 [sub_resource type="Resource" id="Resource_yyqrr"]
 script = ExtResource("2_tl3jl")
-material_id = 0
 
 [resource]
 transparency = 2
