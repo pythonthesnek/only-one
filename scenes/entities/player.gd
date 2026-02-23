@@ -34,6 +34,8 @@ var dead: bool = false
 @onready var decal: Decal = $Head/Camera3D/shotgun/Decal
 @onready var shotgun_ray: RayCast3D = $Head/Camera3D/RayCast3D
 
+@onready var hit_rect: TextureRect = $UI/HitRect
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -143,3 +145,9 @@ func shoot():
 		
 		# The important part: update the raycast immediately
 		shotgun_ray.force_raycast_update()
+
+
+func _on_player_player_hit() -> void:
+	hit_rect.visible = true
+	await get_tree().create_timer(0.2).timeout
+	hit_rect.visible = false
