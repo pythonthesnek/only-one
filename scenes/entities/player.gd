@@ -28,10 +28,11 @@ signal player_hit
 var dead: bool = false
 
 @onready var gun_anim = $Head/Camera3D/shotgun/AnimationPlayer
-@onready var shotgun_ray: Node3D = $Head/Camera3D/shotgun/RayCast3D
+#@onready var shotgun_ray: Node3D = $Head/Camera3D/shotgun/RayCast3D
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var decal: Decal = $Head/Camera3D/shotgun/Decal
+@onready var shotgun_ray: RayCast3D = $Head/Camera3D/RayCast3D
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
