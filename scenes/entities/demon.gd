@@ -6,8 +6,8 @@ var player = null
 @export var HEALTH = 2
 const ATTACK_RANGE = 2.5
 
-@export var player_path:= "/root/World/Map/NavigationRegion3D/Player"
-
+#@export var player_path:= "/root/World/Map/NavigationRegion3D/Player"
+@export var player_path: = "/root/layout/output/NavigationRegion3D/Player"
 @onready var head: Node3D = $"../Player/Head"
 @onready var animated_sprite: AnimatedSprite3D = $AnimatedSprite3D
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
