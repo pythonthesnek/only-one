@@ -4021,6 +4021,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="HitRect" type="TextureRect" parent="UI" unique_id=1504560968]
 visible = false
@@ -4031,6 +4032,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("33_0hib4")
 expand_mode = 1
 
@@ -4048,6 +4050,7 @@ offset_bottom = 90.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.2, 0.2)
+mouse_filter = 2
 texture = ExtResource("34_xr0al")
 
 [connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="." method="_on_player_player_hit"]
