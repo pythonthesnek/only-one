@@ -57,7 +57,7 @@ volumetric_fog_enabled = true
 volumetric_fog_albedo = Color(0.403922, 0.247059, 0.215686, 1)
 volumetric_fog_emission = Color(0.733333, 0.380392, 0.341176, 1)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_8o7ps"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rcfu4"]
 render_priority = 0
 shader = ExtResource("26_06fb6")
 shader_parameter/player_pos = Vector3(1000000, 1000000, 1000000)
@@ -89,7 +89,7 @@ _surfaces = [{
 "format": 34359742491,
 "index_count": 12,
 "index_data": PackedByteArray("AAABAAIAAwABAAAABAAFAAYABwAFAAQA"),
-"material": SubResource("ShaderMaterial_8o7ps"),
+"material": SubResource("ShaderMaterial_rcfu4"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
