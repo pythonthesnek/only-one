@@ -3856,7 +3856,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9, 0, -12)
 [node name="Player" parent="Map/NavigationRegion3D" unique_id=286653975 instance=ExtResource("30_6etvu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13.8662)
 
-[node name="MeshInstance3D" parent="Map/NavigationRegion3D/Player" index="0"]
+[node name="MeshInstance3D" parent="Map/NavigationRegion3D/Player" index="0" unique_id=1525185378]
 visible = false
 
 [node name="Spawns" type="Node3D" parent="Map" unique_id=66349408]
@@ -4052,6 +4052,15 @@ grow_vertical = 2
 scale = Vector2(0.2, 0.2)
 mouse_filter = 2
 texture = ExtResource("34_xr0al")
+
+[node name="ColorRect" type="ColorRect" parent="UI" unique_id=1997331736]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
 
 [connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="." method="_on_player_player_hit"]
 [connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="Map/NavigationRegion3D/Player" method="_on_player_hit"]
