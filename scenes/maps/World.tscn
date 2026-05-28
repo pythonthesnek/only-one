@@ -34,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://crsvy1tc031xw" path="res://scenes/entities/demon.tscn" id="31_7gh22"]
 [ext_resource type="Texture2D" uid="uid://dyxjt0lj48kh2" path="res://assets/hit boarder/Vignette-PNG-File-1268532226.png" id="33_0hib4"]
 [ext_resource type="Texture2D" uid="uid://dkltndieu1c2h" path="res://Textures/crosshair.png" id="34_xr0al"]
+[ext_resource type="Shader" uid="uid://bdke82mdd8fqr" path="res://bayer_mat_dither.gdshader" id="35_rcfu4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_t7442"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -56,7 +57,7 @@ volumetric_fog_enabled = true
 volumetric_fog_albedo = Color(0.403922, 0.247059, 0.215686, 1)
 volumetric_fog_emission = Color(0.733333, 0.380392, 0.341176, 1)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_xr0al"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8o7ps"]
 render_priority = 0
 shader = ExtResource("26_06fb6")
 shader_parameter/player_pos = Vector3(1000000, 1000000, 1000000)
@@ -88,7 +89,7 @@ _surfaces = [{
 "format": 34359742491,
 "index_count": 12,
 "index_data": PackedByteArray("AAABAAIAAwABAAAABAAFAAYABwAFAAQA"),
-"material": SubResource("ShaderMaterial_xr0al"),
+"material": SubResource("ShaderMaterial_8o7ps"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
@@ -116,6 +117,18 @@ albedo_color = Color(1, 0.419608, 0.262745, 1)
 emission_enabled = true
 emission = Color(1, 0.258824, 0.192157, 1)
 emission_energy_multiplier = 4.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_unobp"]
+shader = ExtResource("35_rcfu4")
+shader_parameter/dither_type = 0
+shader_parameter/invert = false
+shader_parameter/matrix_size = 2
+shader_parameter/debug = false
+shader_parameter/flat_dither_level = 0.7750000368125
+shader_parameter/gradient_point_opaque = Vector2(0, 0)
+shader_parameter/gradient_point_trans = Vector2(0, 0)
+shader_parameter/dither_point = Vector2(0, 0)
+shader_parameter/dither_point_radius = 16.0
 
 [node name="World" type="Node3D" unique_id=1910112966]
 script = ExtResource("1_kt751")
@@ -4054,13 +4067,13 @@ mouse_filter = 2
 texture = ExtResource("34_xr0al")
 
 [node name="ColorRect" type="ColorRect" parent="UI" unique_id=1997331736]
+material = SubResource("ShaderMaterial_unobp")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 1, 1, 0)
 
 [connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="." method="_on_player_player_hit"]
 [connection signal="player_hit" from="Map/NavigationRegion3D/Player" to="Map/NavigationRegion3D/Player" method="_on_player_hit"]
